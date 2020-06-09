@@ -1,0 +1,278 @@
+/***** Lizz Moraal - 22 mei 2020 - Web animatie   ********************************************/
+
+/*********************************************************************************************/
+/********************************   HTML styles  **********************************************/
+/*********************************************************************************************/
+
+
+body{
+    font-family: 'Raleway', sans-serif;
+    margin:0;
+}
+
+/*********************************************************************************************/
+/********************************   Heading styles  **********************************************/
+/*********************************************************************************************/
+
+h1{
+    font-size:48pt;
+    font-weight: 700;
+    margin: 1% 0;
+}
+
+h2{
+    font-size:32pt;
+    font-weight: 700;
+    margin-bottom:4%;
+}
+
+h3{
+    font-size:16pt;
+    font-weight: 500;
+    margin: 1% 0 0 0;
+}
+
+#eerste {
+    margin: 2% 34% 2% 0;
+
+}
+
+p{
+    font-size:11pt;
+    font-weight:400;
+    margin: 2% 0;
+    line-height: 1.5;
+}
+
+.balk{
+    background: linear-gradient(to right,  #25BA76 15%,#EFAF0F 15%, #EFAF0F 100%);
+    height:7px;
+    width:100%;
+    margin-bottom:10%;
+}
+
+#split{
+    display:flex; flex-wrap:wrap; width:100%;
+}
+
+.balk1{
+    width:18%;
+    background: linear-gradient(to right,  #25BA76 35%,#EFAF0F 35%, #EFAF0F 100%);
+    height:7px;
+    margin-top:1%;
+}
+.balk2{
+    margin-top:1%;
+    width:50%;
+    background-color: #EFAF0F;
+    height:7px;
+}
+h3{ margin-top:0; padding:0 3%;}
+
+/*********************************************************************************************/
+/********************************   SVG styles  **********************************************/
+/*********************************************************************************************/
+/* 1e vlak */
+    .st0{fill:none;}
+    .st1{fill:#1D1D1B;}
+    .st2{fill:#25BA76;}
+    .st3{fill:#B2382F;}
+    .st4{fill:#E27E1A;}
+    .st5{fill:#77432C;}
+    .st6{fill:#EFAF0F;}
+    .st7{fill:#FFFFFF;}
+    .st8{fill:url(#SVGID_1_);}
+    .st9{fill:url(#SVGID_2_);}
+    .st10{fill:url(#SVGID_3_);}
+    .st11{fill:url(#SVGID_4_);}
+    .st12{fill:url(#SVGID_5_);}
+
+/* 2e vlak */
+    .st02{fill:#EFAF0F;}
+    .st12{fill:#E27E1A;}
+    .st22{fill:url(#SVGID_12_);}
+    .st32{fill:url(#SVGID_22_);}
+    .st42{fill:url(#SVGID_32_);}
+    .st52{fill:url(#SVGID_42_);}
+    .st62{fill:url(#SVGID_52_);}
+    .st72{fill:url(#SVGID_62_);}
+    .st82{fill:url(#SVGID_72_);}
+    .st92{fill:url(#SVGID_82_);}
+    .st102{fill:url(#SVGID_92_);}
+    .st112{fill:url(#SVGID_102_);}
+    .st122{fill:url(#SVGID_112_);}
+    .st132{fill:url(#SVGID_122_);}
+    .st142{fill:url(#SVGID_132_);}
+    .st152{fill:#77432C;}
+    .st162{display:inline;fill:#77432C;}
+
+/* 3e vlak */
+    .st03{fill:none;}
+    .st13{fill:#1D1D1B;}
+    .st23{fill:#B2382F;}
+    .st33{fill:#77432C;}
+    .st43{fill:url(#SVGID_13_);}
+    .st53{fill:url(#SVGID_23_);}
+    .st63{fill:#25BA76;}
+    .st73{fill:#EFAF0F;}
+    .st83{fill:url(#SVGID_33_);}
+    .st93{fill:url(#SVGID_43_);}
+    .st103{fill:url(#SVGID_53_);}
+    .st113{fill:#E27E1A;}
+    .st123{fill:url(#SVGID_63_);}
+
+/* 4e vlak */
+    .st04{fill:#EFAF0F;}
+    .st14{fill:#E27E1A;}
+    .st24{fill:#B2382F;}
+    .st34{fill:url(#SVGID_14_);}
+    .st44{fill:#77432C;}
+
+/* 5e vlak */
+    .st05{fill:#77432C;}
+    .st15{fill:#25BA76;}
+    .st25{fill:#23A35F;}
+    .st35{fill:#E27E1A;}
+    .st45{fill:#EFAF0F;}
+    .st55{fill:#B2382F;}
+
+/* 6e vlak */
+    .st06{fill:none;}
+    .st16{fill:#1D1D1B;}
+    .st26{fill:#77432C;}
+    .st36{fill:#E27E1A;}
+    .st46{fill:#25BA76;}
+    .st56{fill:#EFAF0F;}
+    .st66{fill:#B2382F;}
+    .st76{fill:url(#SVGID_16_);}
+
+/* 7e vlak */
+    .st07{fill:none;}
+    .st17{fill:#1D1D1B;}
+    .st27{fill:#77432C;}
+    .st37{fill:#B2382F;}
+    .st47{fill:#25BA76;}
+    .st57{fill:#E27E1A;}
+    .st67{fill:#EFAF0F;}
+    .st77{fill:url(#SVGID_17_);}
+
+/* 8e vlak */
+    .st08{fill:#E27E1A;}
+    .st18{fill:#EFAF0F;}
+    .st28{fill:#25BA76;}
+    .st38{fill:#B2382F;}
+
+/* 9e vlak */
+    .st09{fill:#77432C;}
+    .st19{fill:#EFAF0F;}
+
+    .outer {
+    position: relative;
+        overflow: hidden;
+    }
+
+   .innerlinks {
+       position:absolute;
+       width:720px;
+       left: -14%;
+    }
+
+    .innerlinkssok {
+       position:absolute;
+       width:667px;
+       left: -25%;
+    }
+
+    .innerrechts {
+        position:absolute;
+        width:667px;
+        right: -12%;
+    }
+
+    .innerrechtsraam {
+        position:absolute;
+        width:667px;
+        right: -1%;
+    }
+
+    .innerrechtspizza {
+        position:absolute;
+        width:667px;
+        right: -20%;
+    }
+
+   .tekst1{
+            margin:3% 15%;
+    }
+    .tekstr{
+            margin:1% 5% 0% 15%;
+    }
+    .tekstl{
+            margin:1% 15% 0% 5%;
+    }
+/*********************************************************************************************/
+/**********************   KOLOMMEN SHIZZLE  **************************/
+/*********************************************************************************************/
+#wrapper{display:flex; flex-wrap:wrap; width:100%;}
+.vlaktekst{
+    width:30%;
+    margin-top:5%;
+    height:400px;
+}
+
+.vlakplaatje{
+    width:50%;
+    margin-top:3%;
+    height:400px;
+}
+
+.vlakplaatjekick{
+    width:50%;
+    margin-top:3%;
+    height:500px;
+}
+
+.vlakplaatjesok{
+    width:45%;
+    margin-top:3%;
+    height:450px;
+}
+
+.vlakplaatjehanden{
+    width:45%;
+    margin-top:3%;
+    height:450px;
+}
+
+/*********************************************************************************************/
+/**********************   THINGS THAT ARE ANIMATIE WHEN PAGE START  **************************/
+/*********************************************************************************************/
+
+
+/*********************************************************************************************/
+/**********************   THINGS THAT ARE HIDDEN AT FIRST SIGHT  *****************************/
+/*********************************************************************************************/
+
+
+/*********************************************************************************************/
+/********************************   ACTIVE  **************************************************/
+/*********************************************************************************************/
+
+
+/*********************************************************************************************/
+/********************************   HOVER  ***************************************************/
+/*********************************************************************************************/
+
+
+
+/*********************************************************************************************/
+/********************************   MEDIA ONLY  **********************************************/
+/*********************************************************************************************/
+
+
+
+/*********************************************************************************************/
+/********************************   KEYFRAMES  **********************************************/
+/*********************************************************************************************/
+
+
