@@ -8,25 +8,22 @@
 
 console.log('hellow');
 
-/***************************   beeld   ****************************************/
-
-var button = document.getElementById("org");
-
-button.addEventListener("click", function () {
-    document.getElementById("beeld1").style.display = "none";
-    document.querySelector("img").style.display = "inline"
-});
-
-var button2 = document.getElementById("illu");
-
-button2.addEventListener("click", function () {
-    document.getElementById("beeld1").style.display = "inline";
-    document.querySelector("img").style.display = "none"
-});
-
 /*********************************************************************************************/
 /********************************    SCROLL     **************************************************/
 /*********************************************************************************************/
+window.addEventListener("scroll", function () {
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+       console.log('hellow');
+      document.getElementById("beeld1").style.display = "inline";
+      document.querySelector("img").style.display = "none";
+
+    } else {
+       document.getElementById("beeld1").style.display = "none";
+        document.querySelector("img").style.display = "inline";
+
+    }
+});
+
 
 window.addEventListener("scroll", function () {
     if (document.body.scrollTop > 650 || document.documentElement.scrollTop > 650) {
