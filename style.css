@@ -10,6 +10,28 @@ body{
     margin:0;
 }
 
+button{
+    margin:1% 2% 0 0;
+    border:none;
+    background-color:#EFAF0F;
+    font-family: 'Raleway', sans-serif;
+    border-radius: 20px;
+    padding:1.5% 3%;
+    box-shadow:3px 3px #e27e30;
+    font-weight:600;
+}
+
+button:hover{
+    margin:1% 2% 0 0;
+    border:none;
+    background-color:#efd40f;
+    font-family: 'Raleway', sans-serif;
+    border-radius: 20px;
+    padding:1.5% 3%;
+    box-shadow:3px 3px #e27e30;
+    font-weight:600;
+}
+
 /*********************************************************************************************/
 /********************************   Heading styles  **********************************************/
 /*********************************************************************************************/
@@ -51,6 +73,10 @@ p{
     margin-bottom:10%;
 }
 
+.balk:hover{
+    background: linear-gradient(to right,  #29e38e 15%,#efd40f 15%, #efd40f 100%);
+}
+
 #split{
     display:flex; flex-wrap:wrap; width:100%;
 }
@@ -67,6 +93,15 @@ p{
     background-color: #EFAF0F;
     height:7px;
 }
+
+.balk2:hover{
+    background-color: #efd40f;
+}
+
+.balk1:hover{
+    background: linear-gradient(to right,  #29e38e 35%,#efd40f 35%, #efd40f 100%);
+}
+
 h3{ margin-top:0; padding:0 3%;}
 
 /*********************************************************************************************/
@@ -76,10 +111,15 @@ h3{ margin-top:0; padding:0 3%;}
     .st0{fill:none;}
     .st1{fill:#1D1D1B;}
     .st2{fill:#25BA76;}
+    .st2:hover{fill:#29e38e;}
     .st3{fill:#B2382F;}
+    .st3:hover{fill:#d43b30;}
     .st4{fill:#E27E1A;}
+    .st4:hover{fill:#ff5722;}
     .st5{fill:#77432C;}
+    .st5:hover{fill:#694332;}
     .st6{fill:#EFAF0F;}
+    .st6:hover{fill:#efd40f;}
     .st7{fill:#FFFFFF;}
     .st8{fill:url(#SVGID_1_);}
     .st9{fill:url(#SVGID_2_);}
@@ -247,11 +287,61 @@ h3{ margin-top:0; padding:0 3%;}
 /*********************************************************************************************/
 /**********************   THINGS THAT ARE ANIMATIE WHEN PAGE START  **************************/
 /*********************************************************************************************/
+#Hoofd7{
+    animation: hoofd7 3s 0.5s both infinite;
+}
+
+#Lichaam2, #Hoofd2{
+    animation: hoofd2 3s 1s both infinite;
+}
+
+#Hoofd5{
+    animation: hoofd5 1.5s 1s both infinite;
+}
 
 
+#Hoofd6{
+    animation: hoofd6 1s 1.5s both infinite;
+}
+
+#Hoofd1{
+    animation: hoofd1 2s 2s both infinite;
+}
+
+#Hoofd4{
+    animation: hoofd4 1s 0.5s both infinite;
+}
+
+#Arm4{
+    animation: arm4 1s 1s both infinite;
+}
+
+#Arm2{
+    animation: arm2 1s 1s both infinite;
+}
+
+#Hoofd3{
+    animation: hoofd3 2s 2.5s both infinite;
+}
+
+#Hoofd8{
+    animation: hoofd8 2s 2.5s both infinite;
+}
+
+#Arm7{
+    animation: arm7 1.5s 1.5s both infinite;
+}
 /*********************************************************************************************/
 /**********************   THINGS THAT ARE HIDDEN AT FIRST SIGHT  *****************************/
 /*********************************************************************************************/
+img{
+    display:none;
+    margin-top:2%;
+}
+
+#Vuil{
+    opacity: 0;
+}
 
 
 /*********************************************************************************************/
@@ -275,4 +365,286 @@ h3{ margin-top:0; padding:0 3%;}
 /********************************   KEYFRAMES  **********************************************/
 /*********************************************************************************************/
 
+@-webkit-keyframes hoofd7 {
+  0%,
+  100% {
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+  }
+  15% {
+            transform: rotate(-1deg);
+  }
+  30% {
+            transform: rotate(2deg);
+  }
+  45% {
+            transform: rotate(-0.6deg);
+  }
+  60% {
+            transform: rotate(1.4deg);
+  }
+  75% {
+            transform: rotate(-0.2deg);
+  }
+}
 
+@-webkit-keyframes hoofd8 {
+  0%,
+  100% {
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+  }
+  15% {
+            transform: rotate(0.5deg);
+  }
+  30% {
+            transform: rotate(-0.5deg);
+  }
+  45% {
+            transform: rotate(-0deg);
+  }
+  60% {
+            transform: rotate(0.5deg);
+  }
+  75% {
+            transform: rotate(0deg);
+  }
+}
+
+@-webkit-keyframes hoofd4 {
+  0%,
+  100% {
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+  }
+  15% {
+            transform: rotate(-0.5deg);
+  }
+  30% {
+            transform: rotate(0deg);
+  }
+  45% {
+            transform: rotate(0.2deg);
+  }
+  60% {
+            transform: rotate(0deg);
+  }
+  75% {
+            transform: rotate(0.2deg);
+  }
+}
+
+@-webkit-keyframes arm4 {
+  0%,
+  100% {
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+  }
+  25% {
+            transform: rotate(0deg);
+  }
+  50% {
+            transform: rotate(-0.5deg);
+  }
+  75% {
+            transform: rotate(0deg);
+  }
+}
+
+@-webkit-keyframes arm2 {
+  0%,
+  100% {
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+  }
+  25% {
+            transform: rotate(0.2deg);
+  }
+  50% {
+            transform: rotate(0deg);
+  }
+  75% {
+            transform: rotate(-0.5deg);
+  }
+}
+
+
+@-webkit-keyframes arm7 {
+  0%,
+  100% {
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+  }
+  25% {
+            transform: rotate(-1deg);
+  }
+  50% {
+            transform: rotate(-1.5deg);
+  }
+  75% {
+            transform: rotate(-0.5deg);
+  }
+}
+
+@-webkit-keyframes hoofd2 {
+  0%,
+  100% {
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+  }
+  25% {
+            transform: rotate(0deg);
+  }
+  50% {
+            transform: rotate(0.5deg);
+  }
+  75% {
+            transform: rotate(0deg);
+  }
+}
+
+@-webkit-keyframes hoofd5 {
+  0%,
+  100% {
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+  }
+  25% {
+            transform: rotate(0.1deg);
+  }
+  50% {
+            transform: rotate(0.3deg);
+  }
+  75% {
+            transform: rotate(0.1deg);
+  }
+}
+
+
+
+@-webkit-keyframes hoofd6 {
+  0%,
+  100% {
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+  }
+  20% {
+            transform: rotate(0deg);
+  }
+  40% {
+            transform: rotate(0.7deg);
+  }
+  60% {
+            transform: rotate(0deg);
+  }
+  80% {
+            transform: rotate(-0.7deg);
+  }
+}
+
+@-webkit-keyframes hoofd1 {
+  0%,
+  100% {
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+  }
+  20% {
+            transform: rotate(0deg);
+  }
+  40% {
+            transform: rotate(-0.4deg);
+  }
+  60% {
+            transform: rotate(0deg);
+  }
+  80% {
+            transform: rotate(-0.4deg);
+  }
+}
+
+@-webkit-keyframes hoofd3 {
+  0%,
+  100% {
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+  }
+  20% {
+            transform: rotate(0deg);
+  }
+  40% {
+            transform: rotate(0.2deg);
+  }
+  60% {
+            transform: rotate(0deg);
+  }
+  80% {
+            transform: rotate(0.2deg);
+  }
+}
+
+/*********************************************************************************************/
+/********************   KEYFRAMES WIE PLAY AFTER JAVASCRIPT  *********************************/
+/*********************************************************************************************/
+
+@-webkit-keyframes handani {
+  0%,
+  100% {
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+  }
+  0% {
+            transform: translateX(300px) rotate(0deg);
+  }
+  30% {
+            transform: translateX(20px) rotate(15deg);
+  }
+    50% {
+            transform: translateX(20px) rotate(0deg);
+  }
+  70% {
+            transform: translateX(20px) rotate(15deg);
+  }
+  100% {
+            transform: translateX(300px) rotate(0deg);
+  }
+}
+
+@-webkit-keyframes vuilani {
+  0%,
+  100% {
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+  }
+  0% {
+          opacity: 0;
+  }
+  30% {
+            opacity: 0;
+  }
+    50% {
+            opacity: 1;
+  }
+  70% {
+            opacity: 1;
+  }
+  100% {
+            opacity: 1;
+  }
+}
+
+@-webkit-keyframes manani {
+  0%,
+  100% {
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+  }
+  0% {
+          opacity: 0;
+  }
+    50% {
+            opacity: 1;
+  }
+  100% {
+            opacity: 0;
+  }
+}
