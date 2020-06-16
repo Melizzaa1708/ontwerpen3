@@ -6,13 +6,48 @@
     <title>Na afloop pizza</title>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,500;0,600;0,700;1,500&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+      // Add smooth scrolling to all links
+      $("a").on('click', function(event) {
+
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+          // Prevent default anchor click behavior
+          event.preventDefault();
+
+          // Store hash
+          var hash = this.hash;
+
+          // Using jQuery's animate() method to add smooth page scroll
+          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 800, function(){
+
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+          });
+        } // End if
+      });
+    });
+    </script>
 </head>
 <body>
     <!------------------------------------------------------------------------------------------------>
+    <!-----------------------------------     Stick to the page    ----------------------------------->
+    <!------------------------------------------------------------------------------------------------>
+       <a href="#anchor"><svg version="1.1" viewBox="0 0 1000 666.7" id="sticky">
+        <circle class="st0st" cx="524.5" cy="351.5" r="264.5"/>
+        <circle class="st1st" cx="484.5" cy="325.5" r="264.5"/>
+        <polyline class="st2st" points="367.4,403 484.3,247.3 598.9,404.8 "/>
+        </svg></a>
+    <!------------------------------------------------------------------------------------------------>
     <!-----------------------------------     Eerste SVG vlak      ----------------------------------->
     <!------------------------------------------------------------------------------------------------>
-    <div class="tekst1"><h1>En na afloop pizza</h1>
-    <div id="split"><div class="balk1"></div><h3>De Aarsman collectie</h3><div class="balk2"></div></div>
+    <div class="tekst1" id="anchor"><h1>En na afloop pizza</h1>
+    <div id="split"><div class="balk1"></div><h3>8 details uitgelicht over de beeldanalyse van de Aarsman collectie</h3><div class="balk2"></div></div>
     <svg version="1.1" viewBox="0 0 1000 666.7" id="beeld1">
     <pattern  x="-250" y="-166.7" width="28.8" height="28.8" patternUnits="userSpaceOnUse" id="_x31_0_dpi_30_x25_" viewBox="2.2 -31 28.8 28.8" style="overflow:visible;">
     <g>
@@ -284,7 +319,7 @@
         C906.4,542.6,892,521,906.4,487.9z"/>
     </g>
     </svg>
-    <img src="images/origineel.png">
+    <img src="images/origineel.png" id="origineel">
     <p id="eerste">Een beeldanalyse van de Aarsman collectie. Na het potje kickball is er pizza bij de Mitchells.
     Homestead, Miami, VS 31 augustus 2018. Foto: Ellis Rua / AP</p>
     </div>
@@ -293,12 +328,12 @@
     <!------------------------------------------------------------------------------------------------>
 <div id="wrapper">
      <div class="tekstr vlaktekst">
-      <h2>Waarom zitten ze niet op de bank?</h2>
-       <div class="balk"></div>
+      <h2><div class="oranje">1.</div>Waarom zitten ze niet op de bank?</h2>
+       <div class="balkoranje"></div>
         <p>De aardappeleters van Vincent van Gogh mochten dan arm zijn, ze aten aan tafel en zaten op stoelen. Op drie na zitten deze Pizza-eters op de grond. Achterin staat een gigantische bank in een halve cirkel. Waarom niet daarop met zijn allen? Vanwege het morsen. Valt het hier op de plavuizen, een zwabber erover en klaar. Links tegen de witte pilaar staat de zwabber. Vanavond hoeft hij niet uit te rukken, niemand morst. Dat komt niet doordat er een fotograaf bij is, ze zijn aan hem gewend, hij volgt ze al langer.</p>
     </div>
     <div class="outer vlakplaatje"><div class="innerrechts">
-    <svg version="1.1" viewBox="0 0 1000 666.7">
+    <svg version="1.1" viewBox="0 0 1000 666.7" id="beeld2">
 <g id="Bank">
     <polygon class="st02" points="102.1,264.4 148.8,225.8 182.6,334.9     "/>
     <path class="st12" d="M140.4,232.8c0,0,42.7-53.7,140.6-39.1c0,0,39.4,19.9,36.6,83.1c0,0-138.5,46.7-137.5,58.1
@@ -451,11 +486,13 @@
         c5-15.4,23-159.9,23-159.9s22.3-56.4,39,2.9l-5.8,167.9c0,0,3,10.3,9-3.7c6-14,23-139.5,23-139.5s13.7-46.9,37.9,1.8L608,213.6
         c0,0,0.7,16,6,1.6c5.3-14.4,23.1-72,23.1-72s26-41,32.1,2.9s-60.1,246.2-60.1,246.2s-27.3,49.8-34.7,55.2l-4.7,165.9L413,620.5z"/>
 </g>
- </svg></div></div>
+ </svg>
+</div></div>
     <!------------------------------------------------------------------------------------------------>
     <!-----------------------------------     Derde SVG vlak      ----------------------------------->
     <!------------------------------------------------------------------------------------------------>
- <div class="outer vlakplaatje"><div class="innerlinks"><svg version="1.1" viewBox="0 0 1000 666.7">
+ <div class="outer vlakplaatje"><div class="innerlinks">
+ <svg version="1.1" viewBox="0 0 1000 666.7" id="beeld3">
 <pattern  width="28.8" height="28.8" patternUnits="userSpaceOnUse" id="_x31_0_dpi_30_x25_" viewBox="2.2 -31 28.8 28.8" style="overflow:visible;">
     <g>
         <rect x="2.2" y="-31" class="st03" width="28.8" height="28.8"/>
@@ -617,9 +654,10 @@
     </pattern>
     <path class="st123" d="M378,374.2c0,0,25.2-38.8,107.2-3.1C485.2,371.1,431.6,276.7,378,374.2z"/>
 </g>
-        </svg></div></div>
+        </svg>
+        </div></div>
      <div class="tekstl vlaktekst">
-      <h2>7 pizza's voor 14 mensen.</h2>
+      <h2><div class="groen">2.</div>7 pizza's voor 14 mensen.</h2>
        <div class="balk"></div>
         <p>Het randje pizzadoos rechtsboven meegeteld, tel ik zeven pizzadozen. Er zijn veertien mensen, ieder een halve pizza. Iemand in huis heeft een obsessie met aardbeien of met appels of met aardbeien en appels. Twaalf dingen tel ik die ermee zijn gedecoreerd.</p>
     </div>
@@ -627,12 +665,12 @@
     <!-----------------------------------     Vierde SVG vlak      ----------------------------------->
     <!------------------------------------------------------------------------------------------------>
      <div class="tekstr vlaktekst">
-      <h2>Hij pulkt repen kaas van zijn pizza.</h2>
-       <div class="balk"></div>
+      <h2><div class="rood">3.</div>Hij pulkt repen kaas van zijn pizza.</h2>
+       <div class="balkrood"></div>
         <p>Het meisje in het midden praat met een jongetje dat niet van kaas houdt. Hij pulkt repen kaas van zijn pizza en legt ze op zijn bord. Zijn vingers zijn er vet van. Zat-ie op de bank, dan zou hij zich bij het opstaan tegen de bank afzetten. Vetvlek.</p>
     </div>
-    <div class="outer vlakplaatje"><div class="innerrechtspizza">
-    <svg version="1.1" viewBox="0 0 1000 666.7">
+    <div class="outer vlakplaatje"><div class="innerrechts">
+    <svg version="1.1" viewBox="0 0 1000 666.7" id="beeld4">
 <g id="Pizza">
     <path class="st04" d="M378.7,177.4c0,0-118.3,3.4-139,47.8c0,0-73.9,16.5-65,70.9c0,0-41.2,25.9-35.8,131.8
         c0,0,335.9,169.5,362.5,164s26.7-16,0-42.9c-26.7-26.9-9.9-38.4-37-50.6c-27.1-12.2,3.8-33.7,13.6-44.2s-20-65.7-20-65.7
@@ -652,19 +690,19 @@
     <path class="st34" d="M480.5,318.7c0,0-85.3,17.8-85.3,30.3s-16.3,27.6-38.3,32.6s10,30.9-3.7,32.8c-13.7,1.9-25.5-40.6-25.5-40.6
         s-6.6-20.6,10.1-35.3c16.7-14.7,114.7-41,132.4-55.4c17.7-14.4,30.8,12.6,17.7,28.1"/>
 </g>
-<g id="Hand">
+<g id="Hand2">
     <path class="st44" d="M903.4,396.8c0,0-114.5-37.1-184.9-155.6S633,64,563.3,90.9s-187,83.6-197.8,93.2
         c-10.8,9.7-51.1,42.5-44.7,60.5c6.3,18,43.9,19.2,91.4-19.9s129-76.4,129-76.4S386.7,226,378.7,274.8c0,0-7.7,64.5,36.7,41.2
         c0,0,39.3-36.9,47.7-55.6s97.5-39.5,109.3-59.4c0,0,14,47.2,34.1,60.1c12.5,8,1.5,58.3-22.8,68.3c-13.4,5.5-141.8-14.2-172,1.3
         c0,0-48.6,46,4.2,50.4c0,0,201.4,25.4,432.4,160.3"/>
 </g>
 </svg>
-</div></div>
+    </div></div>
         <!------------------------------------------------------------------------------------------------>
     <!-----------------------------------     Vijfde SVG vlak      ----------------------------------->
     <!------------------------------------------------------------------------------------------------>
-    <div class="outer vlakplaatjesok"><div class="innerlinkssok">
-    <svg version="1.1" viewBox="0 0 1000 666.7">
+    <div class="outer vlakplaatjesok"><div class="innerlinks">
+    <svg version="1.1" viewBox="0 0 1000 666.7" id="beeld5">
 <g id="Voet">
     <polyline class="st05" points="163,415 350.4,532.7 431.6,494.2 466,415 227.5,234.9     "/>
     <path class="st05" d="M430.5,628.3l35.5-71.8l124.9-23.8l14.3,69.1c0,0-31.4,51.8-86,51.5C464.5,653,430.5,628.3,430.5,628.3z"/>
@@ -698,9 +736,9 @@
         500.2,145.8 625.9,71.7 611.7,45.2 480.9,123.2     "/>
 </g>
 </svg>
-</div></div>
+    </div></div>
      <div class="tekstl vlaktekst">
-      <h2>Ze hebben het niet breed thuis.</h2>
+      <h2><div class="groen">4.</div>Ze hebben het niet breed thuis.</h2>
        <div class="balk"></div>
         <p>Naast hem zit een jongetje met twee verschillende sokken, de donkere is aan flarden. Het zijn kinderen die het thuis niet breed hebben.</p>
     </div>
@@ -708,12 +746,12 @@
     <!-----------------------------------     Zesde SVG vlak      ----------------------------------->
     <!------------------------------------------------------------------------------------------------>
      <div class="tekstr vlaktekst">
-      <h2>Op straat spelen is er niet bij.</h2>
-       <div class="balk"></div>
+      <h2><div class="rood">5.</div>Op straat spelen is er niet bij.</h2>
+       <div class="balkrood"></div>
         <p>Ze wonen in buurten waar veel geweld is, schietpartijen, berovingen, drugs. Op straat spelen is er niet bij. Uit angst dat ze iets overkomt, houden hun ouders ze binnen.</p>
     </div>
-    <div class="outer vlakplaatje"><div class="innerrechtsraam">
-    <svg version="1.1" viewBox="0 0 1000 666.7">
+    <div class="outer vlakplaatje"><div class="innerrechts">
+    <svg version="1.1" viewBox="0 0 1000 666.7" id="beeld6">
 
 <pattern  width="28.8" height="28.8" patternUnits="userSpaceOnUse" id="_x31_0_dpi_30_x25_" viewBox="2.2 -31 28.8 28.8" style="overflow:visible;">
     <g>
@@ -790,12 +828,13 @@
 <g id="Lichaam">
     <path class="st66" d="M202.5,641.6c0,0-1.8-205.9,76.1-243.7c0,0,24.3,30.9,64.4,9.9c0,0,72.7-26.9,71.3,244.1"/>
 </g>
-</svg>  </div></div>
+</svg>
+           </div></div>
         <!------------------------------------------------------------------------------------------------>
     <!-----------------------------------     Zevende SVG vlak      ----------------------------------->
     <!------------------------------------------------------------------------------------------------>
     <div class="outer vlakplaatjekick"><div class="innerlinks">
-    <svg version="1.1" viewBox="0 0 1000 666.7">
+    <svg version="1.1" viewBox="0 0 1000 666.7" id="beeld7">
 <pattern  width="28.8" height="28.8" patternUnits="userSpaceOnUse" id="_x31_0_dpi_30_x25_" viewBox="2.2 -31 28.8 28.8" style="overflow:visible;">
     <g>
         <rect x="2.2" y="-31" class="st07" width="28.8" height="28.8"/>
@@ -913,22 +952,22 @@
         c0,0,3,39.6,20.1,57.3c0,0,5.9,7.4,6.5,14.2c0,0,31.7,67.6,43,84.4C377.5,619.4,393.2,618.2,397.1,605.8z"/>
 </g>
 </svg>
-</div></div>
+    </div></div>
      <div class="tekstl vlaktekst">
-      <h2>Kickball is honkbal met een voetbal.</h2>
-       <div class="balk"></div>
+      <h2><div class="oranje">6.</div>Kickball is honkbal met een voetbal.</h2>
+       <div class="balkoranje"></div>
         <p>Behalve als Samantha en Leon Mitchell -hier aan de bar - ze na school komen halen voor een partijtje kickball op een afgelegen veldje. Dat doen ze al elf jaar. Kickball is honkbal met een voetbal. Je slaat de bal niet met een stok, je schopt hem het veld in. Daarna gaat alles net als met honkbal. Overgooien, uitgooien. En dat iedere dag, behalve zondag.</p>
     </div>
      <!------------------------------------------------------------------------------------------------>
     <!-----------------------------------     Achste SVG vlak      ----------------------------------->
     <!------------------------------------------------------------------------------------------------>
      <div class="tekstr vlaktekst">
-      <h2>Welk park is dit?</h2>
+      <h2><div class="groen">7.</div>Welk park is dit?</h2>
        <div class="balk"></div>
         <p>Linksachter de jongen met het GJCC-shirt hangt een beeldscherm. Onderop ontcijfer ik 5.6 en 1/125, diafragma en sluitertijd. Een foto van een hangbrug met sprookjesachtige verlichting, zoals ze in pretparken te vinden zijn. Dat kan kloppen, Samantha en Leon nemen de kinderen weleens mee naar zo'n park. Welk park is dit? Geen beginnen aan, er zijn ontelbaar veel pretparken in Florida.</p>
     </div>
     <div class="outer vlakplaatje"><div class="innerrechts">
-    <svg version="1.1" viewBox="0 0 1000 666.7">
+    <svg version="1.1" viewBox="0 0 1000 666.7" id="beeld8">
 <g id="Kasteel">
     <path class="st08" d="M312.3,358.2c0,0,85.7-87.7,159.1-100.3s182.7,97.3,182.7,97.3l-7.3-84.1c0,0-65.5-70.4-159-72.7
         c-93.5-2.3-179.9,119.9-179.9,119.9L312.3,358.2z"/>
@@ -961,12 +1000,12 @@
         C172.2,250.5,155.9,276.6,122.4,257.9z"/>
 </g>
 </svg>
-</div></div>
+    </div></div>
         <!------------------------------------------------------------------------------------------------>
     <!-----------------------------------     Negende SVG vlak      ----------------------------------->
     <!------------------------------------------------------------------------------------------------>
     <div class="outer vlakplaatjehanden"><div class="innerlinks">
-    <svg version="1.1" viewBox="0 0 1000 666.7">
+    <svg version="1.1" viewBox="0 0 1000 666.7" id="beeld9">
 <g id="Handlinks">
     <path class="st09" d="M192.8,515L326.4,352c0,0-21.2-102.6,0-145s0-102.6,0-102.6s21.2-16.3,37.5,0s17.9,52.1,17.9,52.1l84.7,140.1
         v60.3l-13,55.4c0,0-132,154.8-141.8,197.2L192.8,515z"/>
@@ -993,10 +1032,10 @@
         s0,54.9-3.7,63l73.3,142.9L637.3,638.1z"/>
 </g>
 </svg>
-</div></div>
+    </div></div>
      <div class="tekstl vlaktekst">
-      <h2>Ik blijf bij Leon en Samantha spelen.</h2>
-       <div class="balk"></div>
+      <h2><div class="oranje">8.</div>Ik blijf bij Leon en Samantha spelen.</h2>
+       <div class="balkoranje"></div>
         <p>Na de pizza allemaal handen wassen en op de bank ploffen, kijken hoe het de laatste keer was in het park. 'Al zouden ze me vragen voor een grote club, dan ging ik niet, ik blijf bij Leon en Samantha spelen.'</p>
     </div>
 </div>

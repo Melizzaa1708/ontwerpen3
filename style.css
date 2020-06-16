@@ -7,7 +7,8 @@
 
 body{
     font-family: 'Raleway', sans-serif;
-    margin:0;
+    margin:0 17.5%;
+    width:65%;
 }
 
 button{
@@ -39,7 +40,7 @@ button:hover{
 h1{
     font-size:48pt;
     font-weight: 700;
-    margin: 1% 0;
+    margin: 2% 0;
 }
 
 h2{
@@ -66,10 +67,14 @@ p{
     line-height: 1.5;
 }
 
+.oranje{color:#e27e1a; }
+.rood{color:#b2382f;}
+.groen{color:#25BA76;}
+
 .balk{
     background: linear-gradient(to right,  #25BA76 15%,#EFAF0F 15%, #EFAF0F 100%);
     height:7px;
-    width:100%;
+    width:95%;
     margin-bottom:10%;
 }
 
@@ -77,19 +82,41 @@ p{
     background: linear-gradient(to right,  #29e38e 15%,#efd40f 15%, #efd40f 100%);
 }
 
+.balkoranje{
+    background: linear-gradient(to right,  #e27e1a 15%,#EFAF0F 15%, #EFAF0F 100%);
+    height:7px;
+    width:95%;
+    margin-bottom:10%;
+}
+
+.balkoranje:hover{
+    background: linear-gradient(to right,  #ff9331 15%,#efd40f 15%, #efd40f 100%);
+}
+
+.balkrood{
+    background: linear-gradient(to right,  #b2382f 15%,#EFAF0F 15%, #EFAF0F 100%);
+    height:7px;
+    width:95%;
+    margin-bottom:10%;
+}
+
+.balkrood:hover{
+    background: linear-gradient(to right,  #d63834 15%,#efd40f 15%, #efd40f 100%);
+}
+
 #split{
     display:flex; flex-wrap:wrap; width:100%;
 }
 
 .balk1{
-    width:18%;
-    background: linear-gradient(to right,  #25BA76 35%,#EFAF0F 35%, #EFAF0F 100%);
+    width:5%;
+    background-color: #EFAF0F;
     height:7px;
     margin-top:1%;
 }
 .balk2{
     margin-top:1%;
-    width:50%;
+    width:20%;
     background-color: #EFAF0F;
     height:7px;
 }
@@ -102,11 +129,31 @@ p{
     background: linear-gradient(to right,  #29e38e 35%,#efd40f 35%, #efd40f 100%);
 }
 
-h3{ margin-top:0; padding:0 3%;}
+h3{ margin-top:0; padding:0 2%;}
+
+#origineel{
+    margin-top:5%;
+}
+
+#sticky{
+    position:fixed;
+    bottom:0;
+    width:5%;
+    z-index:100;
+    right:0;
+    margin-bottom:2%;
+    margin-right:2%;
+}
 
 /*********************************************************************************************/
 /********************************   SVG styles  **********************************************/
 /*********************************************************************************************/
+/* sticky */
+    .st0st{fill:#E27E1A;}
+    .st1st{fill:#EFAF0F;}
+    .st1st:hover{fill:#fcc13d;}
+    .st2st{fill:none;stroke:#E27E1A;stroke-width:50;stroke-miterlimit:10;}
+
 /* 1e vlak */
     .st0{fill:none;}
     .st1{fill:#1D1D1B;}
@@ -208,79 +255,69 @@ h3{ margin-top:0; padding:0 3%;}
 
     .outer {
     position: relative;
-        overflow: hidden;
     }
 
    .innerlinks {
        position:absolute;
-       width:600px;
-       left: -1%;
+       width:660px;
+       margin-left:-45%;
     }
 
-    .innerlinkssok {
-       position:absolute;
-       width:667px;
-       left: -27%;
-    }
 
     .innerrechts {
         position:absolute;
         width:667px;
-        right: -12%;
-    }
-
-    .innerrechtsraam {
-        position:absolute;
-        width:667px;
-        right: -1%;
-    }
-
-    .innerrechtspizza {
-        position:absolute;
-        width:667px;
-        right: -20%;
     }
 
    .tekst1{
-            margin:3% 15%;
+           width:100%;
     }
     .tekstr{
-            margin:1% 5% 0% 15%;
+            margin:2% 5% 0% 0;
     }
     .tekstl{
-            margin:1% 15% 0% 5%;
+            margin:1% 0 0% 5%;
     }
+
+img{
+    width:100%;
+}
 /*********************************************************************************************/
 /**********************   KOLOMMEN SHIZZLE  **************************/
 /*********************************************************************************************/
 #wrapper{display:flex; flex-wrap:wrap; width:100%;}
 .vlaktekst{
-    width:30%;
-    margin-top:5%;
+    width:45%;
     height:400px;
+    margin-top:5%;
+    margin-bottom:4%;
 }
 
 .vlakplaatje{
     width:50%;
-    margin-top:3%;
-    height:400px;
+    margin-top:5%;
+    margin-bottom:4%;
+    height:550px;
 }
 
 .vlakplaatjekick{
     width:50%;
-    margin-top:3%;
+    margin-top:5%;
+    margin-bottom:4%;
     height:500px;
 }
 
 .vlakplaatjesok{
     width:45%;
-    margin-top:3%;
+    margin-top:0;
+    margin-bottom:11%;
     height:450px;
 }
 
 .vlakplaatjehanden{
     width:45%;
-    margin-top:3%;
+    margin-top:7%;
+    margin-bottom:4%;
     height:450px;
 }
 
@@ -332,37 +369,18 @@ h3{ margin-top:0; padding:0 3%;}
     animation: arm7 1.5s 1.5s both infinite;
 }
 
-img{
-    margin-top:5%;
-}
+
+
 /*********************************************************************************************/
 /**********************   THINGS THAT ARE HIDDEN AT FIRST SIGHT  *****************************/
 /*********************************************************************************************/
 #beeld1{
     display:none;
-    width:88%;
 }
+
 #Vuil{
     opacity: 0;
 }
-
-
-/*********************************************************************************************/
-/********************************   ACTIVE  **************************************************/
-/*********************************************************************************************/
-
-
-/*********************************************************************************************/
-/********************************   HOVER  ***************************************************/
-/*********************************************************************************************/
-
-
-
-/*********************************************************************************************/
-/********************************   MEDIA ONLY  **********************************************/
-/*********************************************************************************************/
-
-
 
 /*********************************************************************************************/
 /********************************   KEYFRAMES  **********************************************/
@@ -651,3 +669,263 @@ img{
             opacity: 0;
   }
 }
+
+@-webkit-keyframes hand2 {
+  0%,
+  100% {
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+  }
+  0% {
+            transform: translateX(150px) rotate(0deg);
+  }
+  30% {
+            transform: translateX(20px) rotate(15deg);
+  }
+    50% {
+            transform: translateX(20px) rotate(0deg);
+  }
+  70% {
+            transform: translateX(20px) rotate(15deg);
+  }
+  100% {
+            transform: translateX(150px) rotate(0deg);
+  }
+}
+@-webkit-keyframes pizza {
+  0%,
+  100% {
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+  }
+  0% {
+            transform: translateX(0px) rotate(0deg);
+  }
+  30% {
+            transform: translateX(5px) rotate(5deg);
+  }
+    50% {
+            transform: translateX(5px) rotate(0deg);
+  }
+  70% {
+            transform: translateX(5px) rotate(5deg);
+  }
+  100% {
+            transform: translateX(0px) rotate(0deg);
+  }
+}
+@-webkit-keyframes voet {
+  0%,
+  100% {
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+  }
+  0% {
+            transform: rotate(0deg);
+  }
+  30% {
+            transform: rotate(2deg);
+  }
+    50% {
+            transform: rotate(0deg);
+  }
+  70% {
+            transform: rotate(2deg);
+  }
+  100% {
+            transform: rotate(0deg);
+  }
+}
+@-webkit-keyframes hoofd {
+  0%,
+  100% {
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+  }
+  20% {
+            transform: rotate(0deg);
+  }
+  40% {
+            transform: rotate(0.5deg);
+  }
+  60% {
+            transform: rotate(0deg);
+  }
+  80% {
+            transform: rotate(-1.5deg);
+  }
+}
+@-webkit-keyframes persoon1 {
+  0%,
+  100% {
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+  }
+  0% {
+            transform: translateX(0px);
+  }
+  30% {
+            transform: translateX(25px);
+  }
+    50% {
+            transform: translateX(0px);
+  }
+  70% {
+            transform: translateX(0px);
+  }
+  100% {
+            transform: translateX(0px);
+  }
+}
+@-webkit-keyframes persoon2 {
+  0%,
+  100% {
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+  }
+  0% {
+            transform: translateX(0px);
+  }
+  30% {
+            transform: translateX(-25px);
+  }
+    50% {
+            transform: translateX(-25px);
+  }
+  70% {
+            transform: translateX(-25px);
+  }
+  100% {
+            transform: translateX(0px);
+  }
+}
+@-webkit-keyframes been {
+  0%,
+  100% {
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+  }
+  0% {
+            transform: rotate(0deg);
+  }
+  30% {
+            transform: rotate(10deg);
+  }
+    50% {
+            transform: rotate(0deg);
+  }
+  70% {
+            transform: rotate(10deg);
+  }
+  100% {
+            transform: rotate(0deg);
+  }
+}
+@-webkit-keyframes kickball {
+  0%,
+  100% {
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+  }
+  0% {
+            transform: translateX(0px);
+  }
+
+    50% {
+            transform: translateX(50px) translateY(-50px);
+  }
+
+  100% {
+            transform: translateX(0px);
+  }
+}
+@-webkit-keyframes vlag {
+  0%,
+  100% {
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+  }
+  0% {
+            transform: rotate(0deg);
+  }
+  30% {
+            transform: rotate(-2deg);
+  }
+    50% {
+            transform: rotate(0deg);
+  }
+  70% {
+            transform: rotate(-2deg);
+  }
+  100% {
+            transform: rotate(0deg);
+  }
+}
+@-webkit-keyframes vlag2 {
+  0%,
+  100% {
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+  }
+  0% {
+            transform: rotate(0deg);
+  }
+  30% {
+            transform: rotate(-3deg);
+  }
+    50% {
+            transform: rotate(-1deg);
+  }
+  70% {
+            transform: rotate(0deg);
+  }
+  100% {
+            transform: rotate(0deg);
+  }
+}
+@-webkit-keyframes handrechts {
+  0%,
+  100% {
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+  }
+  0% {
+            transform: rotate(0deg);
+  }
+  30% {
+            transform: rotate(15deg);
+  }
+    50% {
+            transform: rotate(0deg);
+  }
+  70% {
+            transform: rotate(15deg);
+  }
+  100% {
+            transform: rotate(0deg);
+  }
+}
+
+@-webkit-keyframes handlinks {
+  0%,
+  100% {
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+  }
+  0% {
+            transform: rotate(0deg);
+  }
+  30% {
+            transform: rotate(-10deg);
+  }
+    50% {
+            transform: rotate(0deg);
+  }
+  70% {
+            transform: rotate(-10deg);
+  }
+  100% {
+            transform: rotate(0deg);
+  }
+}
+
