@@ -2,7 +2,7 @@
 https://melizzaa1708.github.io/ontwerpen3/
 
 # En na afloop pizza
-Het verhaal gaat over kinderen in een achterstandswijk, maar ondanks dat toch nog een leuke tijd. De Aarsman collectie geeft een kijk op dit beeld en licht de details uit.
+Het verhaal gaat over kinderen in een achterstandswijk, maar ondanks dat toch nog een leuke tijd hebben. De Aarsman collectie geeft een kijk op dit beeld en licht de details uit.
 
 ### Ontwerpkeuzes, omdat
 - Deze analyse de leuke momenten die de kinderen hebben belicht. 
