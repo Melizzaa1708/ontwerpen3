@@ -72,7 +72,7 @@ window.addEventListener("scroll", function () {
 window.addEventListener("scroll", function () {
     if (document.body.scrollTop > 1700 || document.documentElement.scrollTop > 1700) {
         document.getElementById("Hand2").style.animation = "hand2 1.5s 1s infinite";
-       document.getElementById("Kaas").style.animation = "pizza 3s 1s infinite";
+       document.getElementById("Kaas").style.animation = "hand2 1.5s 1s infinite";
     }
 
     else {
