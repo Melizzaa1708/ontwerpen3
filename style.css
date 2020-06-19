@@ -38,19 +38,19 @@ button:hover{
 /*********************************************************************************************/
 
 h1{
-    font-size:48pt;
+    font-size:300%;
     font-weight: 700;
     margin: 2% 0;
 }
 
 h2{
-    font-size:32pt;
+    font-size:200%;
     font-weight: 700;
     margin-bottom:4%;
 }
 
 h3{
-    font-size:16pt;
+    font-size:93%;
     font-weight: 500;
     margin: 1% 0 0 0;
 }
@@ -61,7 +61,7 @@ h3{
 }
 
 p{
-    font-size:11pt;
+    font-size:90%;
     font-weight:400;
     margin: 2% 0;
     line-height: 1.5;
@@ -259,14 +259,14 @@ h3{ margin-top:0; padding:0 2%;}
 
    .innerlinks {
        position:absolute;
-       width:660px;
+       width:200%;
        margin-left:-45%;
     }
 
 
     .innerrechts {
         position:absolute;
-        width:667px;
+        width:200%;
     }
 
    .tekst1{
